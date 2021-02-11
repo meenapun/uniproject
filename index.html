@@ -2,26 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="/css/my.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/my.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <!-- top Bar starts here -->
-      <div class="topbar">
+      <div id="topbar">
         <div class="socialmeida">
-          <img src="" alt="facebook">
-          <img src="" alt="twitter">
+          <img src="images/fb.png" alt="facebook">
+          <img src="images/twitter.png" alt="twitter">
         </div>
         <div class="signup">
-          <a href="#">Login /</a>
-          <a href="#">signup</a>
+          <button type="button" class="toplinkbtn" name="Login">Login</button>
+          <button type="button" class="toplinkbtn" name="Singup">SingUp</button>
         </div>
       </div>
       <!-- top Bar ends here -->
       <header>
-        <div class="loog">
-          <img src="" alt="companylogo">
+        <div id="logo">
+          <img src="images/logo.png" alt="companylogo">
+          <span>ABD SCHOOL</span>
         </div>
         <nav>
           <ul>
@@ -33,36 +38,81 @@
           </ul>
         </nav>
       </header>
-      <div class="carousel">
 
+
+
+
+
+      <div class="slider">
+        <img src="images/1.jpg" alt="school">
+        <img src="images/2.jpg" alt="school">
+        <img src="images/3.jpg" alt="school">
       </div>
-      <div class="media">
-        <div class="gallery">
 
+
+
+
+      <div class="grid-container">
+        <div class="gallery">
+          <div class="card">
+            <img src="images/2.jpg" alt="Events">
+            <div class="card-content">
+              <h3>Tournament</h3>
+              <p>Lorem ipsum dolor sit amet, const non proident,</p>
+            </div>
+          </div>
         </div>
         <div class="event">
-
+          <div class="card">
+            <img src="images/1.jpg" alt="Events">
+            <div class="card-content">
+              <h3>Tournament</h3>
+              <p>Lorem ipsum dolor sit amet,erunt mollit anim id est laborum.</p>
+            </div>
+          </div>
         </div>
-        <div class="video">
-
+        <div class="event">
+          <div class="card">
+            <img src="images/1.jpg" alt="Events">
+            <div class="card-content">
+              <h3>Tournament</h3>
+              <p>Lorem ipsum dolor sit amet, cnt mollit anim id est laborum.</p>
+            </div>
+          </div>
         </div>
-
+        <div class="video ">
+          <video width="320" height="240" controls>
+              <source src="https://lbry.tv/@enterNepal:b/Life-around-Annapurna:1" type="video/mp4">
+              <source src="https://lbry.tv/@enterNepal:b/Life-around-Annapurna:1" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
       </div>
+
       <footer>
         <div class="links">
+            One Waverley Place
+            London NW8 0NP
+            United Kingdom
+            +44 (0)20 7449 1200
+            webmaster@asl.org
+        </div>
+        <div class="maps">
 
         </div>
-        <div class="affilited">
-
-        </div>
-        <div class="fa-copyright">
-
+        <div class="copyright">
+          <p>We use cookies to track usage and preferences.
+            To find out more, please see our privacy policy.</p>
         </div>
       </footer>
 
 
 
     </div>
-
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
   </body>
 </html>
